@@ -8,6 +8,7 @@
 - Preprocessing images by scaling to 0 - 1 range.
 - Loss: Categorical crossentropy.
 - Metric: Accuracy.
+- Number of epochs: 40
 
 ## Result
 
