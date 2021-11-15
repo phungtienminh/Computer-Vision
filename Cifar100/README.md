@@ -1,5 +1,11 @@
 # Cifar100 Result
 
+# Updated version 2
+
+- With gradient clipping and data augmentation, the accuracy on the test set is 64%.
+
+# Version 1
+
 # Overall
 
 - Cifar100 dataset is loaded using tf.keras.datasets module, with 50000 images for training and 10000 images for testing.
