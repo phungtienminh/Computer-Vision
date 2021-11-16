@@ -1,11 +1,14 @@
 # Cifar100 Result
 
 # Version 3
-- The accuracy on the test set is 67% after making some improvement in data augmentation.
+- v3.0: The accuracy on the test set is 67% after making some improvement in data augmentation.
+- v3.1: Slightly increase in dropout rates reduces overfitting a little bit, the accuracy increases to 68.25%.
 
 # Version 2
 
+- Standardization is used instead of normalization.
 - With gradient clipping and data augmentation, the accuracy on the test set is 64%.
+- No. epochs: 100
 
 # Version 1
 
@@ -21,7 +24,4 @@
 
 ## Result
 
-- Custom model with 2 CNNs and 1 FC has ~90% accuracy on the training set but only ~50% accuracy on the validation set and test set. It is clear that the model has overfitted the training set.
-- ResNet50 performs badly on Cifar100, has only roughly 40% accuracy on the validation set and test set but 98% on the training set. Heavily overfitted the training set (see screenshot attached in screenshots folder).
-- Custom model with 3 CNNs and 1 FC: this model uses ELU activation (except for the last before softmax layer). ELU activation eliminates dead neurons issue by shifting bias mean toward zero, meanwhile RELU activation has positive bias mean, and value smaller than zero become zero make corresponding neuron dead, since RELU does not have gradient at zero. With 3 CNNs (Conv2D -> Activation -> Conv2D -> BN -> Activation -> Pooling -> Dropout) and 1 FC (Dense -> Activation -> Softmax), the model has around 53.3% accuracy on the validation set and test set and ~75% accuracy on the training set (overfitted).
-- Attempted to insert BN before Activation as well as expand the training set by data augmentation but it did not improve much.
+- 53.3% accuracy on the test set.
