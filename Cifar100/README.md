@@ -1,6 +1,9 @@
 # Cifar100 Result
 
-# Updated version 2
+# Version 3
+- The accuracy on the test set is 67% after making some improvement in data augmentation.
+
+# Version 2
 
 - With gradient clipping and data augmentation, the accuracy on the test set is 64%.
 
