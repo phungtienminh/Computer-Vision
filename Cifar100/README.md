@@ -1,8 +1,8 @@
 # Cifar100 Result
 
 # Version 3
-- v3.0: The accuracy on the test set is 67% after making some improvement in data augmentation.
 - v3.1: Slightly increase in dropout rates reduces overfitting a little bit, the accuracy increases to 68.25%.
+- v3.0: The accuracy on the test set is 67% after making some improvement in data augmentation.
 
 # Version 2
 
