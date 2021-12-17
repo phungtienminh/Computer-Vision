@@ -1,5 +1,8 @@
 # Cifar100 Result
 
+# Version 4
+- v4.0: 71.63% accuracy on test set. Added gradient clipping, learning rate scheduler, weight decay (L2 regularization 1e-3) change optimizer to SGD momentum with Nesterov variation, use HeNormal initializers, Swish activation instead of ReLU (except for the last ReLU).
+
 # Version 3
 - v3.1: Slightly increase in dropout rates reduces overfitting a little bit, the accuracy increases to 68.25%.
 - v3.0: The accuracy on the test set is 67% after making some improvement in data augmentation.
