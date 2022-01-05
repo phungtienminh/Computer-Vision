@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <img src="{{ url_for('static', filename = 'uploads/' + filename) }}">
+    <br>
+    <p> Predicted: {{ label }} with confidence {{ confidence }} </p>
+</body>
+</html>
